@@ -1,0 +1,30 @@
+{
+  "name": "nodeApiServer",
+  "version": "1.0.0",
+  "description": "nodejs api 服务",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "koa": "^2.14.2",
+    "koa-body": "^6.0.1",
+    "koa-router": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eucilwood/nodeApiServer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eucilwood/nodeApiServer/issues"
+  },
+  "homepage": "https://github.com/eucilwood/nodeApiServer#readme"
+}
