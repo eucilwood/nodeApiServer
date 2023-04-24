@@ -1,6 +1,5 @@
-const { where } = require("sequelize");
-const User = require("../model/use.model");
 
+const User = require("../model/use.model");
 class UserService {
   async createUser(user_name, password) {
     const res = await User.create({ user_name, password });

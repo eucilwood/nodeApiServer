@@ -11,4 +11,5 @@ useRouter.get('/',(ctx,next)=>{
 useRouter.post('/register',userValidator,useVerify,crpytPassWord,register)
 useRouter.post('/login',userValidator,verifyLogin,login)
 useRouter.patch('/changepassword',auth,crpytPassWord,changepassword)
+
 module.exports= useRouter

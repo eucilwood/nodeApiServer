@@ -27,5 +27,21 @@ module.exports={
     invalidTokenError:{
         code:'10007',
         message:'token无效'
+    },
+    isAdminError:{
+        code:'10008',
+        message:'没有admin用户权限'
+    },
+    uploadfailError:{
+        code:'10009',
+        message:'文件上传失败'
+    },
+    goodsformatError:{
+        code:'10010',
+        message:'参数格式错误'
+    },
+    publishGoodsError:{
+        code:'10011',
+        message:'发布商品错误'
     }
 }
