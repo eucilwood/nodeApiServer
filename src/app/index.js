@@ -1,8 +1,13 @@
 const Koa= require('koa')
+const router=require('../router')
 const {koaBody}=require('koa-body')
+const errHandler=require('./errHandler')
 const app =new Koa()
-const useRouter=require('../router/user.route')
+// const useRouter=require('../router/user.route')
+// const goodsRouter=require('../router/goods.route')
 app.use(koaBody())
-app.use(useRouter.routes())
-
+// app.use(useRouter.routes())
+// app.use(goodsRouter.routes())
+app.use(router.routes()).use(router.allowedMethods())
+app.on('error',errHandler)
 module.exports=app
