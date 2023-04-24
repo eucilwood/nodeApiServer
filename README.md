@@ -14,3 +14,6 @@ koa-body 帮助解析数据
 
 拆分service 
 service 是做数据库的处理
+
+数据库操作
+sequelize Orm数据库工具
